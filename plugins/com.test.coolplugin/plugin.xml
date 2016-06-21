@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.test.coolplugin"
+    version="0.2.11">
+    <name>CoolPlugin</name>
+    <description>The coolest Plugin ever implemented</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,coolest</keywords>
+    <repo></repo>
+    <issue></issue>
+
+    <js-module src="www/js/CoolPlugin.js" name="CoolPlugin">
+        <clobbers target="CoolPlugin" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="CoolPlugin" >
+                <param name="android-package" value="com.test.CoolPlugin"/>
+				<param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <source-file src="platforms/android/src/com/test/CoolPlugin.java" target-dir="src/com/test" />
+        <source-file src="platforms/android/src/com/test/ShowingDialog.java" target-dir="src/com/test" />
+		<source-file src="platforms/android/src/com/test/ExpandableListAdapter.java" target-dir="src/com/test" />
+		<source-file src="platforms/android/res/layout/activity_showing_dialog.xml" target-dir="res/layout" />
+		<source-file src="platforms/android/res/layout/list.xml" target-dir="res/layout" />
+		<source-file src="platforms/android/res/layout/list_group.xml" target-dir="res/layout" />
+		<source-file src="platforms/android/res/layout/list_item.xml" target-dir="res/layout" />
+		<source-file src="platforms/android/res/drawable/round_shape.xml" target-dir="res/drawable" />
+    </platform>
+
+</plugin>

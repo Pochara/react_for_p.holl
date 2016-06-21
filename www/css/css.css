@@ -1,0 +1,47 @@
+body{
+	background: white;
+	text-align: center;
+}
+h4 a{
+	width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    color: #0095A9;
+	text-align: left;
+	content: '\025B6';
+}
+input[type="submit"]{
+	width: 100%;
+	padding: 15px 0px;
+	border-color: #ddd;
+	border: 1px;
+	background-color: #0095A9;
+	display: inline-block;
+	outline: 0;
+	color: white;
+}
+input[type="text"]{
+	background: white;
+	padding: 10px 15px;
+	border-color: #ddd;
+	border-radius: 5px;
+	outline: 0;
+	width: 100%;
+}
+input[type="button"]{
+	padding: 15px 20px;
+	background-color: white;
+	width: 100%;
+	outline: 0;
+	border:0px;
+	text-align: left;
+}
+input[type="button"]:hover{
+	background: #E3E3E3;
+	cursor: pointer;
+}
+input[type="button"]:focus{
+	background: #E3E3E3;
+	border: 1px;
+	border-color: #ddd;
+}
